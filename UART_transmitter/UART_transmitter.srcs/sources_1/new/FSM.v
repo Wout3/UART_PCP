@@ -26,7 +26,7 @@ module FSM(
         input wire [7:0]data,
         input wire baud,
         input wire tx_start,
-        output reg txb
+        output reg txd
     );
     
     localparam S_IDLE  = 4'b0000;
@@ -44,10 +44,10 @@ module FSM(
     reg [2:0] r_state, r_next_state;
    
     always @ (posedge clk_i, negedge rstb_i ) begin : state_register
-      if (~rstb_i) begin
-         r_state = S_IDLE;
+      if (!rstb_i) begin
+         r_state <= S_IDLE;
       end else begin
-         r_state = r_next_state;
+         r_state <= r_next_state;
       end
     end
     
@@ -132,34 +132,37 @@ module FSM(
     always @ (r_state) begin : output_logic
       case (r_state)
         S_IDLE: begin
-           
+           txd = 1'b0;
         end
         S_START: begin
-           
+           txd = 1'b0;
         end
         S_BIT0: begin
-           
+           txd = data[0];
         end
         S_BIT1: begin
-           
+           txd = data[1];
         end
         S_BIT2: begin
-           
+           txd = data[2];
+        end
+        S_BIT3: begin
+           txd = data[3];
         end
         S_BIT4: begin
-           
+           txd = data[4];
         end
         S_BIT5: begin
-           
+           txd = data[5];
         end
         S_BIT6: begin
-           
+           txd = data[6];
         end
         S_BIT7: begin
-           
+           txd = data[7];
         end
         S_STOP: begin
-           
+           txd = 1'b0;
         end
       endcase  
     end
