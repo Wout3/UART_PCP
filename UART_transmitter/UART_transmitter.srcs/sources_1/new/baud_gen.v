@@ -41,9 +41,10 @@ module baud_gen
         end else begin
             if (rxCounter >= THRESHOLD) begin
                 rxCounter <= 0;
-                baud <= ~baud;
+                baud <= 1'b1;
             end else begin
                 rxCounter <= rxCounter + 1;
+                baud <= 1'b0;
             end
         end
     end
