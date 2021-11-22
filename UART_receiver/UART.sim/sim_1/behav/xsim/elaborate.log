@@ -1,0 +1,19 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f5c45885c10844f4a3772e6c793d6997 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot UART_Receiver_tb_behav xil_defaultlib.UART_Receiver_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.UART_Receiver_Baud16Generator
+Compiling module xil_defaultlib.UART_Receiver_MidBitGenerator
+Compiling module xil_defaultlib.UART_Receiver_FSM
+Compiling module xil_defaultlib.UART_Receiver_ShiftRegister
+Compiling module xil_defaultlib.UART_Receiver_DataOutRegister
+Compiling module xil_defaultlib.UART_Receiver
+Compiling module xil_defaultlib.uartgen
+Compiling module xil_defaultlib.UART_Receiver_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot UART_Receiver_tb_behav
