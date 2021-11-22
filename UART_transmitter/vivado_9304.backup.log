@@ -1,0 +1,2285 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 22 11:10:50 2021
+# Process ID: 9304
+# Current directory: C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13624 C:\Users\BACJA\Documents\GitHub\UART_PCP\UART_transmitter\UART_transmitter.xpr
+# Log file: C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/vivado.log
+# Journal file: C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_transmitter' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 50
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 779.699 ; gain = 19.301
+run all
+close_sim
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [Common 17-344] 'close_sim' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [VRFC 10-2458] undeclared symbol data_i, assumed default net type wire [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v:35]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v:34]
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v:39]
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v:46]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v:34]
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v:39]
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v:46]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 781.785 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'txd' is not permitted [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v:52]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 50
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 963.832 ; gain = 3.879
+run all
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v} 38
+run all
+Stopped at time : 13296195 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" Line 38
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v} 46
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v} 43
+run all
+Stopped at time : 13296195 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" Line 46
+run all
+Stopped at time : 13296205 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" Line 38
+run all
+Stopped at time : 13296205 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" Line 46
+run all
+Stopped at time : 13296215 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" Line 38
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v} -line 46
+run all
+Stopped at time : 13296225 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" Line 38
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v} -line 38
+run all
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 963.832 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 50
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 963.832 ; gain = 0.000
+run all
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v} 46
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 50
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 963.832 ; gain = 0.000
+run all
+Stopped at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" Line 46
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v} 47
+run all
+Stopped at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" Line 47
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 50
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 963.832 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 50
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 963.832 ; gain = 0.000
+run all
+Stopped at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" Line 46
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v} -line 46
+run all
+Stopped at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" Line 47
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v} -line 47
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v} -line 43
+run all
+run all
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 963.832 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+ERROR: [VRFC 10-1280] procedural assignment to a non-register baud is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v:39]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register baud is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v:44]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register baud is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v:47]
+ERROR: [VRFC 10-2865] module 'baud_gen' ignored due to previous errors [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 50
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 50
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 50
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 50
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1013.621 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'baud' is not permitted [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v:33]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 51
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 51
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+update_compile_order -fileset sources_1
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 53
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 54
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 53
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 53
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 55
+run all
+Stopped at time : 12461405 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 55
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 55
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1013.621 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 55
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 55
+run all
+$finish called at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 55
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 55
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 55
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1013.621 ; gain = 0.000
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 58
+run all
+Stopped at time : 0 fs : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 55
+run all
+Stopped at time : 0 fs : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 55
+run all
+Stopped at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 55
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 55
+run all
+Stopped at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 58
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 64
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 65
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 140
+run all
+Stopped at time : 15 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 64
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 67
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 64
+run all
+Stopped at time : 15 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 67
+run all
+Stopped at time : 15 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 140
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 140
+run all
+$finish called at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 57
+run all
+Stopped at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 67
+run all
+Stopped at time : 145 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 65
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 143
+run all
+Stopped at time : 155 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 143
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 146
+run all
+Stopped at time : 295 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 146
+run all
+run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1013.621 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 58
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+Stopped at time : 15 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 67
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 65
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 67
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 85
+run all
+$finish called at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 57
+run all
+Stopped at time : 155 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 143
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 143
+run all
+Stopped at time : 295 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 146
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 146
+run all
+Stopped at time : 435 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 85
+run all
+Stopped at time : 435 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 85
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 85
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 58
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+$finish called at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 57
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 10 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 58
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 58
+run all
+$finish called at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 57
+run all
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 86
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 86
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 137
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 140
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 143
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 146
+remove_bps -file {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} -line 146
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 146
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 149
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 152
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 155
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 158
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 161
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 164
+add_bp {C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v} 167
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Stopped at time : 0 fs : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 137
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+Stopped at time : 15 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 140
+run all
+$finish called at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 57
+run all
+Stopped at time : 155 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 143
+run all
+Stopped at time : 295 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 146
+run all
+Stopped at time : 435 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 149
+run all
+Stopped at time : 575 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 152
+run all
+Stopped at time : 585 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" Line 137
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+WARNING: [Simulator 45-24] Previous breakpoint at line 137 in file 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v' not restored because it is no longer a breakable line.
+WARNING: [Simulator 45-24] Previous breakpoint at line 140 in file 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v' not restored because it is no longer a breakable line.
+WARNING: [Simulator 45-24] Previous breakpoint at line 143 in file 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v' not restored because it is no longer a breakable line.
+WARNING: [Simulator 45-24] Previous breakpoint at line 146 in file 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v' not restored because it is no longer a breakable line.
+WARNING: [Simulator 45-24] Previous breakpoint at line 149 in file 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v' not restored because it is no longer a breakable line.
+WARNING: [Simulator 45-24] Previous breakpoint at line 152 in file 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v' not restored because it is no longer a breakable line.
+WARNING: [Simulator 45-24] Previous breakpoint at line 155 in file 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v' not restored because it is no longer a breakable line.
+WARNING: [Simulator 45-24] Previous breakpoint at line 158 in file 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v' not restored because it is no longer a breakable line.
+WARNING: [Simulator 45-24] Previous breakpoint at line 161 in file 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v' not restored because it is no longer a breakable line.
+WARNING: [Simulator 45-24] Previous breakpoint at line 164 in file 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v' not restored because it is no longer a breakable line.
+WARNING: [Simulator 45-24] Previous breakpoint at line 167 in file 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v' not restored because it is no longer a breakable line.
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.621 ; gain = 0.000
+run all
+add_files -norecurse {C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_DataOutRegister.v C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_ShiftRegister.v C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_MidBitGenerator.v C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_Baud16Generator.v}
+update_compile_order -fileset sources_1
+close [ open C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v w ]
+add_files C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver
+INFO: [VRFC 10-2458] undeclared symbol load_data_out, assumed default net type wire [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v:50]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_Baud16Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_Baud16Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_DataOutRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_DataOutRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_FSM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'state' is not allowed [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_MidBitGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_MidBitGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_ShiftRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_ShiftRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'data_out_valid' on this module [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v:46]
+ERROR: [VRFC 10-3180] cannot find port 'data_out' on this module [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v:45]
+ERROR: [VRFC 10-3180] cannot find port 'rxd' on this module [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v:44]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver
+INFO: [VRFC 10-2458] undeclared symbol load_data_out, assumed default net type wire [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v:50]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_Baud16Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_Baud16Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_DataOutRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_DataOutRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_FSM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'state' is not allowed [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_MidBitGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_MidBitGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_ShiftRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_ShiftRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3180] cannot find port 'rxd' on this module [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v:44]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver
+INFO: [VRFC 10-2458] undeclared symbol load_data_out, assumed default net type wire [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v:50]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_Baud16Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_Baud16Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_DataOutRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_DataOutRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_FSM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'state' is not allowed [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_MidBitGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_MidBitGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_ShiftRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_ShiftRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'data_out' is not permitted [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v:36]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'data_out_valid' is not permitted [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v:37]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver
+INFO: [VRFC 10-2458] undeclared symbol load_data_out, assumed default net type wire [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v:50]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_Baud16Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_Baud16Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_DataOutRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_DataOutRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_FSM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'state' is not allowed [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_MidBitGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_MidBitGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_ShiftRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_ShiftRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'data_o' is not permitted [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v:36]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'data_o_valid' is not permitted [C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v:37]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver
+INFO: [VRFC 10-2458] undeclared symbol load_data_out, assumed default net type wire [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v:50]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_Baud16Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_Baud16Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_DataOutRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_DataOutRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_FSM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'state' is not allowed [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_MidBitGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_MidBitGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_ShiftRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_ShiftRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.UART_Receiver_Baud16Generator
+Compiling module xil_defaultlib.UART_Receiver_MidBitGenerator
+Compiling module xil_defaultlib.UART_Receiver_FSM
+Compiling module xil_defaultlib.UART_Receiver_ShiftRegister
+Compiling module xil_defaultlib.UART_Receiver_DataOutRegister
+Compiling module xil_defaultlib.UART_Receiver
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1083.336 ; gain = 5.641
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver
+INFO: [VRFC 10-2458] undeclared symbol load_data_out, assumed default net type wire [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v:50]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_Baud16Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_Baud16Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_DataOutRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_DataOutRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_FSM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'state' is not allowed [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_MidBitGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_MidBitGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_ShiftRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_ShiftRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.UART_Receiver_Baud16Generator
+Compiling module xil_defaultlib.UART_Receiver_MidBitGenerator
+Compiling module xil_defaultlib.UART_Receiver_FSM
+Compiling module xil_defaultlib.UART_Receiver_ShiftRegister
+Compiling module xil_defaultlib.UART_Receiver_DataOutRegister
+Compiling module xil_defaultlib.UART_Receiver
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 59
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1083.336 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver
+INFO: [VRFC 10-2458] undeclared symbol load_data_out, assumed default net type wire [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v:50]
+INFO: [VRFC 10-2458] undeclared symbol state, assumed default net type wire [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v:52]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_Baud16Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_Baud16Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_DataOutRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_DataOutRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_FSM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'state' is not allowed [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_MidBitGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_MidBitGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_ShiftRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_ShiftRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/UART_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/baud_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/input_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d287bf1deb294b52a2f84205f5859d33 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'state' [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v:52]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.input_register
+Compiling module xil_defaultlib.FSM
+Compiling module xil_defaultlib.UART_transmitter
+Compiling module xil_defaultlib.UART_Receiver_Baud16Generator
+Compiling module xil_defaultlib.UART_Receiver_MidBitGenerator
+Compiling module xil_defaultlib.UART_Receiver_FSM
+Compiling module xil_defaultlib.UART_Receiver_ShiftRegister
+Compiling module xil_defaultlib.UART_Receiver_DataOutRegister
+Compiling module xil_defaultlib.UART_Receiver
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 20 ns : File "C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_transmitter/UART_transmitter.srcs/sources_1/new/FSM_tb.v" Line 59
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1083.336 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 22 12:32:23 2021...

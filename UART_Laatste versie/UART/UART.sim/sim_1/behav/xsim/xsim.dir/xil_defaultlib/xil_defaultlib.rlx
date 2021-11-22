@@ -1,0 +1,20 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/BACJA/Documents/GitHub/UART/UART.v,1637615813,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver.v,,UART,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART/UART.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART/UART.srcs/sim_1/new/UART_RX_TB.v,1637607192,verilog,,,,UART_RX_TB,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART/UART.srcs/sim_1/new/UART_TB.v,1637615876,verilog,,,,UART_TB,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART/UART.srcs/sim_1/new/UART_TX_TB.v,1637614242,verilog,,,,UART_TX_TB,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART/UART.srcs/sources_1/imports/UART/UART_Transmitter_baud_gen.v,1637614864,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART_Transmitter_input_register.v,,UART_Transmitter_baud_gen,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART/UART.srcs/sources_1/imports/new/uartgen.v,1637405345,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART/UART.srcs/sim_1/new/UART_RX_TB.v,,uartgen,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver.v,1637609621,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver_Baud16Generator.v,,UART_Receiver,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver_Baud16Generator.v,1637606498,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver_DataOutRegister.v,,UART_Receiver_Baud16Generator,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver_DataOutRegister.v,1637616065,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver_FSM.v,,UART_Receiver_DataOutRegister,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver_FSM.v,1637609214,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver_MidBitGenerator.v,,UART_Receiver_FSM,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver_MidBitGenerator.v,1637489031,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver_ShiftRegister.v,,UART_Receiver_MidBitGenerator,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART_Receiver_ShiftRegister.v,1637609214,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART_Transmitter_FSM.v,,UART_Receiver_ShiftRegister,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART_Transmitter_FSM.v,1637610278,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART/UART.srcs/sources_1/imports/UART/UART_Transmitter_baud_gen.v,,UART_Transmitter_FSM,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART_Transmitter_input_register.v,1637606027,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART_transmitter.v,,UART_Transmitter_input_register,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART/UART_transmitter.v,1637606027,verilog,,C:/Users/BACJA/Documents/GitHub/UART/UART/UART.srcs/sim_1/new/UART_TB.v,,UART_transmitter,,,,,,,,

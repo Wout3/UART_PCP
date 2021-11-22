@@ -2,3 +2,6 @@ Running: xsim.dir/FSM_tb_behav/xsimk.exe -simmode gui -wdb FSM_tb_behav.wdb -sim
 Design successfully loaded
 Design Loading Memory Usage: 5816 KB (Peak: 5816 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 14564 KB (Peak: 14564 KB)
+Simulation CPU Usage: 5827 ms

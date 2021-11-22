@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../UART_Receiver.v" \
+"../../../../../UART_Receiver_Baud16Generator.v" \
+"../../../../../UART_Receiver_DataOutRegister.v" \
+"../../../../../UART_Receiver_FSM.v" \
+"../../../../../UART_Receiver_MidBitGenerator.v" \
+"../../../../../UART_Receiver_ShiftRegister.v" \
+"../../../../../UART_Transmitter_FSM.v" \
+"../../../../UART.srcs/sources_1/imports/UART/UART_Transmitter_baud_gen.v" \
+"../../../../../UART_Transmitter_input_register.v" \
+"../../../../../UART_transmitter.v" \
+"../../../../../UART.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
