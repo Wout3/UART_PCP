@@ -21,28 +21,29 @@
 
 
 module UART_transmitter(
-        input wire clk_i,
-        input wire rstb_i,
-        input wire [7:0]data_i,
-        input wire baud,
-        input wire tx_start,
-        output reg txd
+        input  clk_i,
+        input  rstb_i,
+        input  [7:0]data_i,
+        input  tx_start,
+        output  txd
     );
     
+    wire [7:0] data;
+    wire baud;
         
-    baud_gen (
+    baud_gen Baug_gen(
         .clk_i             (clk_i),        
         .baud              (baud),
         .rstb_i            (rstb_i));
    
-    input_register (
+    input_register input_register (
         .clk_i             (clk_i),       
         .rstb_i            (rstb_i),
         .data              (data),
         .data_i              (data_i),
         .tx_start          (tx_start));
         
-    FSM (
+    FSM FSM(
         .clk_i             (clk_i),        
         .baud              (baud),
         .rstb_i            (rstb_i),

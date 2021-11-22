@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 22 12:38:20 2021
+# Process ID: 17640
+# Current directory: C:/Users/BACJA/Documents/GitHub/UART_PCP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9500 C:\Users\BACJA\Documents\GitHub\UART_PCP\UART.xpr
+# Log file: C:/Users/BACJA/Documents/GitHub/UART_PCP/vivado.log
+# Journal file: C:/Users/BACJA/Documents/GitHub/UART_PCP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/BACJA/Documents/GitHub/UART_PCP/UART.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/BACJA/Verilog/UART/UART_Receiver' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART.srcs/sources_1/new/UART_Receiver_Baud16Generator.v'; using path 'C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_Baud16Generator.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART.srcs/sources_1/new/UART_Receiver_DataOutRegister.v'; using path 'C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_DataOutRegister.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART.srcs/sources_1/new/UART_Receiver_FSM.v'; using path 'C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART.srcs/sources_1/new/UART_Receiver_MidBitGenerator.v'; using path 'C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_MidBitGenerator.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART.srcs/sources_1/new/UART_Receiver_ShiftRegister.v'; using path 'C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_ShiftRegister.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART.srcs/sources_1/new/UART_Receiver.v'; using path 'C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART.srcs/sim_1/new/UART_Receiver_tb.v'; using path 'C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sim_1/new/UART_Receiver_tb.v' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'C:/Users/BACJA/Documents/GitHub/UART_PCP/UART.ip_user_files'; using path 'C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.ip_user_files' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 22 12:39:01 2021...

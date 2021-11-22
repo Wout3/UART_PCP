@@ -25,26 +25,26 @@ module baud_gen
         parameter CLOCK_RATE = 125000000,
         parameter BAUD_RATE = 9600
     )(
-        input wire clk_i,
-        input wire rstb_i,
-        output reg baud
+        input  clk_i,
+        input  rstb_i,
+        output  reg baud = 0
     );
     
     localparam THRESHOLD = CLOCK_RATE/BAUD_RATE;
     
-    reg rxCounter = 0;
+    integer rxCounter = 0;
     
     always @ (posedge clk_i, negedge rstb_i) begin
-        if (rstb_i==1'b1) begin
+        if (!rstb_i) begin
             baud <= 0;
-            rxCounter = 0;
+            rxCounter <= 0;
         end else begin
-            if (rxCounter >= THRESHOLD) begin
+            if (rxCounter >= 13) begin
                 rxCounter <= 0;
-                baud <= 1'b1;
+                baud <= 1;
             end else begin
-                rxCounter <= rxCounter + 1;
-                baud <= 1'b0;
+                rxCounter = rxCounter + 1;
+                baud <= 0;
             end
         end
     end

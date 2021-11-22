@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 22 11:10:23 2021
+# Process ID: 10356
+# Current directory: C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_receiver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2580 C:\Users\BACJA\Documents\GitHub\UART_PCP\UART_receiver\UART.xpr
+# Log file: C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_receiver/vivado.log
+# Journal file: C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_receiver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/BACJA/Documents/GitHub/UART_PCP/UART_receiver/UART.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/BACJA/Verilog/UART/UART_Receiver' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/BACJA/Documents/OneDrive - VITO/Jasper/Master/_Cursussen/Programmeerbare componenten/Oef UART/uartgen.v'; using path 'C:/Users/BACJA/OneDrive - VITO/Jasper/Master/_Cursussen/Programmeerbare componenten/Oef UART/uartgen.v' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 22 11:10:46 2021...
