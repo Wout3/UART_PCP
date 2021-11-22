@@ -1,0 +1,21 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver
+INFO: [VRFC 10-2458] undeclared symbol load_data_out, assumed default net type wire [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v:50]
+INFO: [VRFC 10-2458] undeclared symbol state, assumed default net type wire [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver.v:52]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_Baud16Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_Baud16Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_DataOutRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_DataOutRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_FSM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'state' is not allowed [C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_FSM.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_MidBitGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_MidBitGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sources_1/new/UART_Receiver_ShiftRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_ShiftRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/OneDrive - VITO/Jasper/Master/_Cursussen/Programmeerbare componenten/Oef UART/uartgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uartgen
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'data' is not allowed [C:/Users/BACJA/OneDrive - VITO/Jasper/Master/_Cursussen/Programmeerbare componenten/Oef UART/uartgen.v:13]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'tx' is not allowed [C:/Users/BACJA/OneDrive - VITO/Jasper/Master/_Cursussen/Programmeerbare componenten/Oef UART/uartgen.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/BACJA/Verilog/UART/UART_Receiver/UART.srcs/sim_1/new/UART_Receiver_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Receiver_tb
