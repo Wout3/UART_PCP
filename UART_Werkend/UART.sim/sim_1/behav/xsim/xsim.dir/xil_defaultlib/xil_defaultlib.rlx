@@ -1,0 +1,19 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sim_1/new/UART_tb.v,1637876209,verilog,,,,UART_tb,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART.v,1637875660,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R.v,,UART,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R.v,1637875349,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R_Baud16Generator.v,,UART_R,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R_Baud16Generator.v,1637875911,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R_DataOutRegister.v,,UART_R_Baud16Generator,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R_DataOutRegister.v,1637876064,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R_FSM.v,,UART_R_DataOutRegister,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R_FSM.v,1637875983,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R_MidbitGenerator.v,,UART_R_FSM,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R_MidbitGenerator.v,1637875933,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R_ShiftRegister.v,,UART_R_MidbitGenerator,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_R_ShiftRegister.v,1637876031,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_SwitchMonitor.v,,UART_R_ShiftRegister,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_SwitchMonitor.v,1637876096,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_T.v,,UART_SwitchMonitor,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_T.v,1637875642,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_T_BaudGenerator.v,,UART_T,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_T_BaudGenerator.v,1637875888,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_T_FSM.v,,UART_T_BaudGenerator,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_T_FSM.v,1637875849,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_T_InputRegister.v,,UART_T_FSM,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_T_InputRegister.v,1637875792,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_txd_register.v,,UART_T_InputRegister,,,,,,,,
+C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sources_1/new/UART_txd_register.v,1637876470,verilog,,C:/Users/BACJA/Documents/GitHub/UART_Werkend/UART.srcs/sim_1/new/UART_tb.v,,UART_txd_register,,,,,,,,
