@@ -1,0 +1,492 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 19136
+License: Customer
+
+Current time: 	Sun Nov 28 23:12:35 CET 2021
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 134 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	wout_
+User home directory: C:/Users/wout_
+User working directory: C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/wout_/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/wout_/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/wout_/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/vivado.log
+Vivado journal file location: 	C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/vivado.jou
+Engine tmp dir: 	C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/.Xil/Vivado-19136-LAPTOP-HUN8U8NP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 690 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\wout_\OneDrive\Documents\GitHub\UART\UART_Werkend\UART.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.xpr 
+// Tcl Message: open_project C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/BACJA/Documents/GitHub/UART_Werkend' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 83 MB (+84460kb) [00:00:07]
+// [Engine Memory]: 645 MB (+524716kb) [00:00:07]
+// [GUI Memory]: 96 MB (+9780kb) [00:00:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  2399 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 694 MB. GUI used memory: 53 MB. Current time: 11/28/21, 11:12:36 PM CET
+// [Engine Memory]: 694 MB (+17249kb) [00:00:09]
+// Project name: UART; location: C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 102 MB (+550kb) [00:00:10]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 98 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART (UART.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART (UART.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 378 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// [GUI Memory]: 112 MB (+5383kb) [00:08:09]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (A)
+dismissDialog("No Implementation Results Available"); // A (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// Tcl Message: [Sun Nov 28 23:20:43 2021] Launched synth_1... Run output will be captured here: C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.runs/synth_1/runme.log [Sun Nov 28 23:20:43 2021] Launched impl_1... Run output will be captured here: C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 112 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-91] ambiguous clock in event control [C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/sources_1/new/UART_txd_register.v:19]. ]", 1, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\wout_\OneDrive\Documents\GitHub\UART\UART_Werkend\UART.srcs\sources_1\new\UART_txd_register.v;-;;-;16;-;line;-;19;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART (UART.v), Transmitter : UART_T (UART_T.v)]", 2); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART (UART.v), Transmitter : UART_T (UART_T.v)]", 2); // B (D, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-91] ambiguous clock in event control [C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/sources_1/new/UART_txd_register.v:19]. ]", 1, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\wout_\OneDrive\Documents\GitHub\UART\UART_Werkend\UART.srcs\sources_1\new\UART_txd_register.v;-;;-;16;-;line;-;19;-;;-;16;-;"); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'UART_txd_register' [C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/sources_1/new/UART_txd_register.v:11]. ]", 2, true); // ah (Q, cp) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\wout_\OneDrive\Documents\GitHub\UART\UART_Werkend\UART.srcs\sources_1\new\UART_txd_register.v;-;;-;16;-;line;-;11;-;;-;16;-;"); // ah (Q, cp)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'UART_txd_register' [C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/sources_1/new/UART_txd_register.v:11]. ]", 2); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'UART_txd_register' [C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/sources_1/new/UART_txd_register.v:11]. , [Synth 8-6156] failed synthesizing module 'UART' [C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/sources_1/new/UART.v:11]. ]", 3, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\wout_\OneDrive\Documents\GitHub\UART\UART_Werkend\UART.srcs\sources_1\new\UART.v;-;;-;16;-;line;-;11;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 148 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-91] ambiguous clock in event control [C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/sources_1/new/UART_txd_register.v:19]. ]", 1, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\wout_\OneDrive\Documents\GitHub\UART\UART_Werkend\UART.srcs\sources_1\new\UART_txd_register.v;-;;-;16;-;line;-;19;-;;-;16;-;"); // ah (Q, cp)
+selectCodeEditor("UART_txd_register.v", 258, 317); // cl (w, cp)
+// Elapsed time: 82 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-91] ambiguous clock in event control [C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/sources_1/new/UART_txd_register.v:19]. ]", 1, false); // ah (Q, cp)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\wout_\OneDrive\Documents\GitHub\UART\UART_Werkend\UART.srcs\sources_1\new\UART_txd_register.v;-;;-;16;-;line;-;19;-;;-;16;-;"); // ah (Q, cp)
+// Elapsed time: 246 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11, true); // u (Q, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 11, true); // u (Q, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cp): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Nov 28 23:31:25 2021] Launched synth_1... Run output will be captured here: C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.runs/synth_1/runme.log [Sun Nov 28 23:31:25 2021] Launched impl_1... Run output will be captured here: C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cp): Bitstream Generation Failed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 716 MB. GUI used memory: 57 MB. Current time: 11/28/21, 11:32:45 PM CET
+// Elapsed time: 137 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cp)
+// Elapsed time: 123 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 744 MB (+16698kb) [00:23:24]
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// HMemoryUtils.trashcanNow. Engine heap size: 744 MB. GUI used memory: 60 MB. Current time: 11/28/21, 11:35:51 PM CET
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3414 ms.
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1670.562 ; gain = 906.840 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0). 
+// [Engine Memory]: 1,635 MB (+894532kb) [00:23:34]
+// Elapsed time: 10 seconds
+dismissDialog("Auto Connect"); // bx (cp)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  1628 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,938 MB. GUI used memory: 59 MB. Current time: 11/28/21, 11:36:32 PM CET
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1684 ms. Increasing delay to 3000 ms.
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,962 MB (+257595kb) [00:24:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,968 MB. GUI used memory: 60 MB. Current time: 11/28/21, 11:36:40 PM CET
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2018.3/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 2,097 MB (+39168kb) [00:24:15]
+// Package: addNotify
+// Device: addNotify
+// [GUI Memory]: 134 MB (+17187kb) [00:24:16]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2176 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 2001.965 ; gain = 0.250 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 2001.965 ; gain = 0.250 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2002.457 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2140.348 ; gain = 449.773 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 153 MB (+12791kb) [00:24:18]
+// WARNING: HEventQueue.dispatchEvent() is taking  1437 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 19 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+// RouteApi::initDelayMediator elapsed time: 8.9s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 2,528 MB (+341669kb) [00:24:27]
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (leds) elapsed time: 0.3s
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "leds (4) ; OUT ;  ;  ;  ;  ; false ; 13 ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1, "default (LVCMOS18)", 8, true); // z (Q, cp) - Node
+// [GUI Memory]: 161 MB (+844kb) [00:24:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,547 MB. GUI used memory: 102 MB. Current time: 11/28/21, 11:36:55 PM CET
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "leds (4) ; OUT ;  ;  ;  ;  ; false ; 13 ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1, "default (LVCMOS18)", 8, true); // z (Q, cp) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {leds[3]} {leds[2]} {leds[1]} {leds[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "switches (4) ; IN ;  ;  ;  ;  ; false ; 13 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 2, "default (LVCMOS18)", 8, true); // z (Q, cp) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {switches[3]} {switches[2]} {switches[1]} {switches[0]}]] 
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "leds (4) ; OUT ;  ;  ;  ;  ; false ; 13 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1); // z (Q, cp)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "leds[3] ; OUT ;  ;  ;  ; V11 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 2, "V11", 5, false); // z (Q, cp)
+// Elapsed time: 81 seconds
+selectTreeTableHeader(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Neg Diff Pair", 4); // z (Q, cp)
+selectTreeTableHeader(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Neg Diff Pair", 4); // z (Q, cp)
+selectTreeTableHeader(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Board Part Pin", 2); // z (Q, cp)
+// Elapsed time: 25 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "leds[3] ; OUT ;  ;  ;  ; V11 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 2, "V11", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {leds[3]} R14 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "leds[2] ; OUT ;  ;  ;  ; V10 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3, "V10", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {leds[2]} P14 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "leds[1] ; OUT ;  ;  ;  ; V6 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 4, "V6", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {leds[1]} N16 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "leds[0] ; OUT ;  ;  ;  ; W6 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 5, "W6", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {leds[0]} M14 
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "switches (4) ; IN ;  ;  ;  ;  ; false ; 13 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 6); // z (Q, cp)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "switches[3] ; IN ;  ;  ;  ; Y11 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 7, "Y11", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {switches[3]} V16 
+// Elapsed time: 36 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "switches[2] ; IN ;  ;  ;  ; T5 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 8, "T5", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {switches[2]} W16 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "switches[1] ; IN ;  ;  ;  ; U5 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 9, "U5", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {switches[1]} V12 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "switches[0] ; IN ;  ;  ;  ; Y12 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 10, "Y12", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {switches[0]} W13 
+// Elapsed time: 10 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (4) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 11, "Scalar ports (4)", 0, true); // z (Q, cp) - Node
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (4) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 11); // z (Q, cp)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "clk_i ; IN ;  ;  ;  ; U7 ; false ; 13 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 12, "IN", 1, false); // z (Q, cp)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "clk_i ; IN ;  ;  ;  ; U7 ; false ; 13 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 12, "U7", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports clk_i H16 
+// Elapsed time: 23 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "clk_i ; IN ;  ;  ;  ; H16 ; true ; 35 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 12, "default (LVCMOS18)", 8, false); // z (Q, cp)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list clk_i]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "rstb_i ; IN ;  ;  ;  ; W11 ; false ; 13 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 13, "default (LVCMOS18)", 8, false); // z (Q, cp)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list rstb_i]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "rxd ; IN ;  ;  ;  ; U8 ; false ; 13 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 14, "default (LVCMOS18)", 8, false); // z (Q, cp)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list rxd]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "txd ; OUT ;  ;  ;  ; Y13 ; false ; 13 ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 15, "default (LVCMOS18)", 8, false); // z (Q, cp)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list txd]] 
+// Elapsed time: 56 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "rstb_i ; IN ;  ;  ;  ; W11 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 13, "W11", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports rstb_i D19 
+// Elapsed time: 16 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "rxd ; IN ;  ;  ;  ; U8 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 14, "U8", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports rxd D20 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "txd ; OUT ;  ;  ;  ; Y13 ; false ; 13 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 15, "Y13", 5, false); // z (Q, cp)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports txd L15 
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// A (cp): Out of Date Design: addNotify
+dismissDialog("Save Project"); // al (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// a (cp): Save Constraints: addNotify
+dismissDialog("Out of Date Design"); // A (cp)
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "Uart"); // Y (D, a)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bx (cp):  Save Constraints : addNotify
+// Tcl Message: file mkdir C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/constrs_1/new 
+// Tcl Message: close [ open C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/constrs_1/new/Uart.xdc w ] 
+// Tcl Message: add_files -fileset constrs_1 C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/constrs_1/new/Uart.xdc 
+// Tcl Message: set_property target_constrs_file C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/constrs_1/new/Uart.xdc [current_fileset -constrset] 
+dismissDialog("Save Constraints"); // a (cp)
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints -force 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2634.879 ; gain = 0.000 
+// A (cp): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Constraints"); // bx (cp)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 16 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Sun Nov 28 23:42:42 2021] Launched synth_1... Run output will be captured here: C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.runs/synth_1/runme.log [Sun Nov 28 23:42:43 2021] Launched impl_1... Run output will be captured here: C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 122 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.runs/impl_1/UART.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 19 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.runs/impl_1/UART.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)

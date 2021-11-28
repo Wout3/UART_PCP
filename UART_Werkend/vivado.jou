@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov 28 23:12:23 2021
+# Process ID: 19136
+# Current directory: C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11284 C:\Users\wout_\OneDrive\Documents\GitHub\UART\UART_Werkend\UART.xpr
+# Log file: C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/vivado.log
+# Journal file: C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {leds[3]} {leds[2]} {leds[1]} {leds[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {switches[3]} {switches[2]} {switches[1]} {switches[0]}]]
+place_ports {leds[3]} R14
+place_ports {leds[2]} P14
+place_ports {leds[1]} N16
+place_ports {leds[0]} M14
+place_ports {switches[3]} V16
+place_ports {switches[2]} W16
+place_ports {switches[1]} V12
+place_ports {switches[0]} W13
+place_ports clk_i H16
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk_i]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rstb_i]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rxd]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list txd]]
+place_ports rstb_i D19
+place_ports rxd D20
+place_ports txd L15
+file mkdir C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/constrs_1/new
+close [ open C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/constrs_1/new/Uart.xdc w ]
+add_files -fileset constrs_1 C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/constrs_1/new/Uart.xdc
+set_property target_constrs_file C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.srcs/constrs_1/new/Uart.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.runs/impl_1/UART.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/wout_/OneDrive/Documents/GitHub/UART/UART_Werkend/UART.runs/impl_1/UART.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

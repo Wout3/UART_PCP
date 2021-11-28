@@ -16,7 +16,7 @@ module UART_txd_register(
     output reg txd
     );
     
-    always @(posedge clk_i, negedge !rstb_i) begin
+    always @(posedge clk_i, negedge rstb_i) begin
         if (!rstb_i)
             txd <= 0;
         else 

@@ -1,0 +1,92 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Nov 28 23:43:40 2021
+| Host         : LAPTOP-HUN8U8NP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file UART_control_sets_placed.rpt
+| Design       : UART
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |   117 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           12 |
+|      2 |            1 |
+|      4 |            4 |
+|      8 |            3 |
+|     11 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            5 |
+| No           | No                    | Yes                    |              59 |           24 |
+| No           | Yes                   | No                     |               4 |            4 |
+| Yes          | No                    | No                     |              12 |            2 |
+| Yes          | No                    | Yes                    |              27 |            7 |
+| Yes          | Yes                   | No                     |              39 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+--------------------------------------------+--------------------------------------+------------------+----------------+
+|          Clock Signal          |                Enable Signal               |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++--------------------------------+--------------------------------------------+--------------------------------------+------------------+----------------+
+|  Switch_monitor/tx_start_reg_0 |                                            | Switch_monitor/data_i_reg[3]_0       |                1 |              1 |
+|  Switch_monitor/tx_start_reg_1 |                                            | Switch_monitor/data_i_reg[2]_0       |                1 |              1 |
+|  Switch_monitor/tx_start_reg_2 |                                            | Switch_monitor/data_i_reg[1]_0       |                1 |              1 |
+|  Switch_monitor/tx_start_reg_3 |                                            | Switch_monitor/data_i_reg[0]_0       |                1 |              1 |
+|  clk_i_IBUF_BUFG               |                                            | Switch_monitor/tx_start_reg_0        |                1 |              1 |
+|  clk_i_IBUF_BUFG               |                                            | Switch_monitor/tx_start_reg_1        |                1 |              1 |
+|  clk_i_IBUF_BUFG               |                                            | Switch_monitor/data_i_reg[0]_0       |                1 |              1 |
+|  clk_i_IBUF_BUFG               |                                            | Switch_monitor/data_i_reg[1]_0       |                1 |              1 |
+|  clk_i_IBUF_BUFG               |                                            | Switch_monitor/data_i_reg[2]_0       |                1 |              1 |
+|  clk_i_IBUF_BUFG               |                                            | Switch_monitor/data_i_reg[3]_0       |                1 |              1 |
+|  clk_i_IBUF_BUFG               |                                            | Switch_monitor/tx_start_reg_2        |                1 |              1 |
+|  clk_i_IBUF_BUFG               |                                            | Switch_monitor/tx_start_reg_3        |                1 |              1 |
+|  clk_i_IBUF_BUFG               |                                            |                                      |                2 |              2 |
+|  Receiver/DataOutRegister/CLK  |                                            |                                      |                3 |              4 |
+|  clk_i_IBUF_BUFG               | Switch_monitor/data_i[3]_i_1_n_0           |                                      |                1 |              4 |
+|  clk_i_IBUF_BUFG               | Switch_monitor/switches_prev[3]_i_1_n_0    | Receiver/Baud16Generator/rstb_i      |                1 |              4 |
+|  clk_i_IBUF_BUFG               | Transmitter/FSM/r_state[3]_i_1_n_0         | Receiver/Baud16Generator/rstb_i      |                1 |              4 |
+|  clk_i_IBUF_BUFG               | Receiver/DataOutRegister/data_o[7]_i_1_n_0 | Receiver/Baud16Generator/rstb_i      |                2 |              8 |
+|  clk_i_IBUF_BUFG               | Receiver/FSM/E[0]                          | Receiver/Baud16Generator/rstb_i      |                1 |              8 |
+|  clk_i_IBUF_BUFG               | Receiver/MidbitGenerator/E[0]              |                                      |                1 |              8 |
+|  clk_i_IBUF_BUFG               | Receiver/FSM/r_state                       | Receiver/Baud16Generator/rstb_i      |                3 |             11 |
+|  clk_i_IBUF_BUFG               | Receiver/MidbitGenerator/counter0          | Receiver/MidbitGenerator/counter[23] |                9 |             31 |
+|  clk_i_IBUF_BUFG               |                                            | Receiver/Baud16Generator/rstb_i      |               16 |             51 |
++--------------------------------+--------------------------------------------+--------------------------------------+------------------+----------------+
+
+
